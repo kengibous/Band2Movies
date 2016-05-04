@@ -1,0 +1,26 @@
+{
+  "name": "Band2Movies",
+  "version": "0.0.0",
+  "description": "Band 2 Movies API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kengibous/Band2Movies.git"
+  },
+  "keywords": [
+    "heroku",
+    "test",
+    "deploy"
+  ],
+  "author": "Kyle Engibous",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kengibous/Band2Movies/issues"
+  },
+  "dependencies": {
+    "express": "^3.4.8"
+  }
+}
