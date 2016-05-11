@@ -1,8 +1,19 @@
 var express = require("express");
 var app = express();
+var Showtimes = require("showtimes");
+var api = new Showtimes(53186, {});
  
+
 app.get('/', function(req, res) {
-  res.send('Every day in every way I\'m serving more requests');
+  
+  api.getTheaters(function (error, theaters) {
+	  if (error) {
+		throw error
+	  }
+	 
+	  res.send(theaters);
+	});
+
 });
  
 var port = Number(process.env.PORT || 5000);
